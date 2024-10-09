@@ -4,7 +4,7 @@ const mongoose = require('mongoose')
 const hello =  require('./model')
 
 const nirvi =  express()
-const uri = "mongodb+srv://lakshmicharvy1819:Charvy@nirvanalohitha.ctm5r.mongodb.net/?retryWrites=true&w=majority&appName=NirvanaLohitha"
+const uri = process.env.URI
 mongoose.connect(uri)
  
 nirvi.use(express.json())
