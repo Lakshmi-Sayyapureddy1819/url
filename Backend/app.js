@@ -9,6 +9,12 @@ mongoose.connect(uri)
  
 nirvi.use(express.json())
 
+nirvi.get('/', (request, response) => {
+    response.json({
+        mess:"the url shortner is working"
+    })
+})
+
 nirvi.get('/:hello', async (request,response)=>{
     const short = await hello.findOne({ short: request.params.hello})
     if (short == null) return response.sendStatus(404)
