@@ -1,5 +1,5 @@
-const mongoose = require('mongoose')
-const { customAlphabet } = require('nanoid')
+import mongoose from 'mongoose'
+import { customAlphabet } from 'nanoid'
 
 const urlschema = new mongoose.Schema({
     shorturl:{
@@ -15,7 +15,7 @@ const urlschema = new mongoose.Schema({
 const hello = mongoose.model('url',urlschema)
 
 
-module.exports = hello
+export hello
 
 
 
