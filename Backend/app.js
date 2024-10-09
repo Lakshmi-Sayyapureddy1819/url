@@ -4,7 +4,7 @@ import mongoose from 'mongoose'
 import hello from './model.js'
 
 const nirvi =  express()
-const uri = process.env.URI
+const uri = process.env.MONGODB_URI
 mongoose.connect(uri)
  
 nirvi.use(express.json())
