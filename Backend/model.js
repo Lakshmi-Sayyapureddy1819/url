@@ -15,7 +15,7 @@ const urlschema = new mongoose.Schema({
 const hello = mongoose.model('url',urlschema)
 
 
-export hello
+export default hello
 
 
 
