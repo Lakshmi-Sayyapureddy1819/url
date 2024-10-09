@@ -1,7 +1,7 @@
-const express = require('express')
-const mongoose = require('mongoose')
+import express from 'express'
+import mongoose from 'mongoose'
 
-const hello =  require('./model')
+import hello from './model'
 
 const nirvi =  express()
 const uri = process.env.URI
