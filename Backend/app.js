@@ -1,7 +1,7 @@
 import express from 'express'
 import mongoose from 'mongoose'
 
-import hello from './model'
+import hello from './model.js'
 
 const nirvi =  express()
 const uri = process.env.URI
