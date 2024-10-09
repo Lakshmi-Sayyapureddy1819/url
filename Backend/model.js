@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-const customAlphabet = require('nanoid')
+import { customAlphabet } from 'nanoid'
 
 const urlschema = new mongoose.Schema({
     shorturl:{
